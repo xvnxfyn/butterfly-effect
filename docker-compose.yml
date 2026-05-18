@@ -1,0 +1,9 @@
+version: "3.9"
+
+services:
+  butterfly-effect:
+    build: .
+    container_name: butterfly-effect-app
+    ports:
+      - "80:80"
+    restart: always
