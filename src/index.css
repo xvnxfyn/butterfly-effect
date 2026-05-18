@@ -1,0 +1,64 @@
+@import "tailwindcss";
+
+@theme {
+  --color-surface: #121413;
+  --color-surface-dim: #121413;
+  --color-surface-bright: #383a38;
+  --color-surface-container-lowest: #0d0f0e;
+  --color-surface-container-low: #1a1c1b;
+  --color-surface-container: #1e201f;
+  --color-surface-container-high: #282a29;
+  --color-surface-container-highest: #333534;
+  --color-on-surface: #e2e3e0;
+  --color-on-surface-variant: #c7c4d7;
+  --color-inverse-surface: #e2e3e0;
+  --color-inverse-on-surface: #2f312f;
+  
+  --color-primary: #c0c1ff;
+  --color-on-primary: #1000a9;
+  --color-primary-container: #8083ff;
+  --color-on-primary-container: #0d0096;
+  
+  --color-secondary: #4de082;
+  --color-on-secondary: #003919;
+  --color-secondary-container: #00b55d;
+  --color-on-secondary-container: #003e1c;
+  
+  --color-tertiary: #cebdff;
+  --color-on-tertiary: #381385;
+  --color-tertiary-container: #9b7fed;
+  --color-on-tertiary-container: #31057e;
+  
+  --color-error: #ffb4ab;
+  --color-on-error: #690005;
+  --color-error-container: #93000a;
+  --color-on-error-container: #ffdad6;
+
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Outfit", sans-serif;
+}
+
+@layer base {
+  body {
+    @apply bg-surface text-on-surface font-sans antialiased;
+    background-color: #0d0f0e;
+  }
+}
+
+.star-field {
+  background-image: radial-gradient(white 1px, transparent 1px);
+  background-size: 40px 40px;
+  opacity: 0.15;
+}
+
+.cosmic-void {
+  background: radial-gradient(circle at 0% 0%, #1e201f 0%, #0d0f0e 50%);
+}
+
+.glass-card {
+  @apply bg-surface-container/60 backdrop-blur-xl border border-white/10;
+}
+
+.ghost-border {
+  @apply border border-white/10;
+}

@@ -1,0 +1,8 @@
+{
+  "name": "The Butterfly Effect",
+  "description": "A causality engine and decision-mapping tool to visualize the ripples of your choices.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
